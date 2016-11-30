@@ -9,26 +9,34 @@ namespace LR_3_code_Cch
         {
             var productList = new List<Product>();
 
-            var addingProduct = new Product("Колбаса", DateTime.Today, new DateTime(2017, 3, 24));            
-            productList.Add(addingProduct);
+            #region CreateProducts
+                var addingProduct = new Product("Колбаса", DateTime.Today, new DateTime(2017, 3, 24));
+                productList.Add(addingProduct);
 
-            addingProduct = new Product("Хлеб", new DateTime(2016, 11, 29), DateTime.Today);
-            productList.Add(addingProduct);
+                addingProduct = new Product("Хлеб", new DateTime(2016, 11, 29), DateTime.Today);
+                productList.Add(addingProduct);
 
-            addingProduct = new Product("Молоко", new DateTime(2016, 10, 14), new DateTime(2016, 10, 20));
-            productList.Add(addingProduct);
+                addingProduct = new Product("Молоко", new DateTime(2016, 10, 14), new DateTime(2016, 10, 20));
+                productList.Add(addingProduct);
 
-            foreach (var product in productList)
-            {
-                Console.WriteLine(product);    
-            }
+            #endregion
+
+            ListPresenter(productList);
+
             BinSerialize.Serealize(productList,"productList");
+
             var deDerializeList = BinSerialize.DeSerealize<List<Product>>("productList");
-            foreach (var product in deDerializeList)
-            {
-                Console.WriteLine(product);
-            }
+
+            ListPresenter(deDerializeList);
             Console.ReadLine();
+        }
+
+        static void ListPresenter<T>(List<T> list) where T : class 
+        {
+            foreach (var obj in list)
+            {
+                Console.WriteLine(obj);
+            }
         }
     }
 }
