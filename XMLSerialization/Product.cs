@@ -34,7 +34,8 @@ namespace XMLSerialization
 
         public override string ToString()
         {
-            return string.Format("ID = {0} Name = {1}\nManufacture date = {2:d} Expiration date = {3:d}\nPossible to eat = {4}\n", Id, Name, ManufactureDate, ExpirationDate, PossibleToEat());
+            return
+                $"ID = {Id} Name = {Name}\nManufacture date = {ManufactureDate:d} Expiration date = {ExpirationDate:d}\nPossible to eat = {PossibleToEat()}\n";
         }
     }
 }
