@@ -30,11 +30,11 @@ namespace XMLSerialization
                 formatter.Serialize(fs, productList);
             }
 
-            //using (var fs = new FileStream("Product.xml", FileMode.OpenOrCreate))
-            //{
-            //    deDerializeList = (List<Product>) formatter.Deserialize(fs);
-            //}
-            //ListPresenter(deDerializeList);
+            using (var fs = new FileStream("Product.xml", FileMode.OpenOrCreate))
+            {
+                deDerializeList = (List<Product>)formatter.Deserialize(fs);
+            }
+            ListPresenter(deDerializeList);
             Console.ReadLine();
         }
 

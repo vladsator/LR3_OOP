@@ -6,10 +6,10 @@ namespace XMLSerialization
     [Serializable]
     public class Product
     {
-        private static int _objCount;        public int Id { get; }
-        public string Name { get;}
-        public DateTime ManufactureDate { get; }
-        public DateTime ExpirationDate { get; } 
+        private static int _objCount;        public int Id { get; set; }
+        public string Name { get; set; }
+        public DateTime ManufactureDate { get; set; }
+        public DateTime ExpirationDate { get; set; } 
 
         public Product()
         {
