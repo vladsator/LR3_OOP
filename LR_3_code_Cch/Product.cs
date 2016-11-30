@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LR_3_code_Cch
 {
+    [Serializable]
     class Product
-    {
+    {       
         private static int _objCount;
         public int Id { get; }
         public string Name { get;}

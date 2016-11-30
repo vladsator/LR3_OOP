@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LR_3_code_Cch
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var productList = new List<Product>();
 
@@ -24,6 +21,12 @@ namespace LR_3_code_Cch
             foreach (var product in productList)
             {
                 Console.WriteLine(product);    
+            }
+            BinSerialize.Serealize(productList,"productList");
+            var deDerializeList = BinSerialize.DeSerealize<List<Product>>("productList");
+            foreach (var product in deDerializeList)
+            {
+                Console.WriteLine(product);
             }
             Console.ReadLine();
         }
