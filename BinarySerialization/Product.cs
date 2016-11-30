@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LR_3_code_Cch
+namespace BinarySerialization
 {
     [Serializable]
     class Product

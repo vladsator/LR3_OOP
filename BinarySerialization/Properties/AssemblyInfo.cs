@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Управление общими сведениями о сборке осуществляется с помощью 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("LR_3_code_Cch")]
+[assembly: AssemblyTitle("BinarySerialization")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("LR_3_code_Cch")]
+[assembly: AssemblyProduct("BinarySerialization")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("c3eee1fb-5408-43cc-8309-7e1a698f3886")]
+[assembly: Guid("4eea2fbd-db10-4932-a95e-1e433d366b8e")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //

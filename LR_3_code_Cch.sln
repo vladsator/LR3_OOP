@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LR_3_code_Cch", "LR_3_code_Cch\LR_3_code_Cch.csproj", "{C3EEE1FB-5408-43CC-8309-7E1A698F3886}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySerialization", "BinarySerialization\BinarySerialization.csproj", "{4EEA2FBD-DB10-4932-A95E-1E433D366B8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C3EEE1FB-5408-43CC-8309-7E1A698F3886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C3EEE1FB-5408-43CC-8309-7E1A698F3886}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C3EEE1FB-5408-43CC-8309-7E1A698F3886}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C3EEE1FB-5408-43CC-8309-7E1A698F3886}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EEA2FBD-DB10-4932-A95E-1E433D366B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EEA2FBD-DB10-4932-A95E-1E433D366B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EEA2FBD-DB10-4932-A95E-1E433D366B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EEA2FBD-DB10-4932-A95E-1E433D366B8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

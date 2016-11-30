@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C3EEE1FB-5408-43CC-8309-7E1A698F3886}</ProjectGuid>
+    <ProjectGuid>{4EEA2FBD-DB10-4932-A95E-1E433D366B8E}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LR_3_code_Cch</RootNamespace>
-    <AssemblyName>LR_3_code_Cch</AssemblyName>
+    <RootNamespace>BinarySerialization</RootNamespace>
+    <AssemblyName>BinarySerialization</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinSerialize.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
