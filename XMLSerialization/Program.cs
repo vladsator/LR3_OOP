@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Serialization;
 
 namespace XMLSerialization
@@ -20,7 +16,7 @@ namespace XMLSerialization
                 new Product("Хлеб", new DateTime(2016, 11, 29), DateTime.Today),
                 new Product("Молоко", new DateTime(2016, 10, 14), new DateTime(2016, 10, 20))
             };
-            List<Product> deDerializeList = null;
+            List<Product> deDerializeList;
 
             ListPresenter(productList);
 
