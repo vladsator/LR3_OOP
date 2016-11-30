@@ -8,7 +8,6 @@ namespace LR_3_code_Cch
         public static void Serealize<T>(T serializableObj, string fileName) where T : class
         {
             BinaryFormatter formatter = new BinaryFormatter();
-            // получаем поток, куда будем записывать сериализованный объект
             using (FileStream fs = new FileStream(fileName+".dat", FileMode.OpenOrCreate))
             {
                 formatter.Serialize(fs, serializableObj);

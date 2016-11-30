@@ -7,19 +7,12 @@ namespace LR_3_code_Cch
     {
         static void Main()
         {
-            var productList = new List<Product>();
-
-            #region CreateProducts
-                var addingProduct = new Product("Колбаса", DateTime.Today, new DateTime(2017, 3, 24));
-                productList.Add(addingProduct);
-
-                addingProduct = new Product("Хлеб", new DateTime(2016, 11, 29), DateTime.Today);
-                productList.Add(addingProduct);
-
-                addingProduct = new Product("Молоко", new DateTime(2016, 10, 14), new DateTime(2016, 10, 20));
-                productList.Add(addingProduct);
-
-            #endregion
+            var productList = new List<Product>
+            {
+                new Product("Колбаса", DateTime.Today, new DateTime(2017, 3, 24)),
+                new Product("Хлеб", new DateTime(2016, 11, 29), DateTime.Today),
+                new Product("Молоко", new DateTime(2016, 10, 14), new DateTime(2016, 10, 20))
+            };
 
             ListPresenter(productList);
 
