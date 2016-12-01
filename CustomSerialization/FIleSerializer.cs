@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CustomSerialization
@@ -14,18 +10,17 @@ namespace CustomSerialization
         public static void Serialize(string filename, object objectToSerialize)
         {
             if (objectToSerialize == null)
-                throw new ArgumentNullException("objectToSerialize cannot be null");
+                throw new ArgumentNullException($"objectToSerialize cannot be null");
             Stream stream = null;
             try
             {
                 stream = File.Open(filename, FileMode.Create);
-                BinaryFormatter bFormatter = new BinaryFormatter();
+                var bFormatter = new BinaryFormatter();
                 bFormatter.Serialize(stream, objectToSerialize);
             }
             finally
             {
-                if (stream != null)
-                    stream.Close();
+                stream?.Close();
             }
         }
 
@@ -46,8 +41,7 @@ namespace CustomSerialization
 
             finally
             {
-                if (stream != null)
-                    stream.Close();
+                stream?.Close();
             }
             return objectToSerialize;
         }

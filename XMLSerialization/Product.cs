@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace XMLSerialization
 {
     [Serializable]
-    public class Product:ISerializable
+    public class Product
     {
         private static int _objCount;
         public int Id { get; set; }
@@ -38,21 +38,6 @@ namespace XMLSerialization
         {
             return
                 $"ID = {Id} Name = {Name}\nManufacture date = {ManufactureDate:d} Expiration date = {ExpirationDate:d}\nPossible to eat = {PossibleToEat()}\n";
-        }
-
-        protected Product(SerializationInfo info, StreamingContext context)
-        {
-            Id = _objCount++;
-            Name = info.GetString("Name");
-            ManufactureDate = info.GetDateTime("ManufactureDate");
-            ExpirationDate = info.GetDateTime("ExpirationDate");
-        }
-
-        public void GetObjectData(SerializationInfo info, StreamingContext context)
-        {
-            info.AddValue("Name", Name);
-            info.AddValue("ManufactureDate", ManufactureDate);
-            info.AddValue("ExpirationDate", ExpirationDate);
         }
     }
 }
