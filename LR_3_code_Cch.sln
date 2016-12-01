@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLSerialization", "XMLSeri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomSerialization", "CustomSerialization\CustomSerialization.csproj", "{E19EC518-E231-4D8B-BB3D-32B725E4B1D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONSerialization", "JSONSerialization\JSONSerialization.csproj", "{DF2C5AB1-1FBA-4BD0-8CB8-A6F762B87A41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E19EC518-E231-4D8B-BB3D-32B725E4B1D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E19EC518-E231-4D8B-BB3D-32B725E4B1D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E19EC518-E231-4D8B-BB3D-32B725E4B1D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF2C5AB1-1FBA-4BD0-8CB8-A6F762B87A41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF2C5AB1-1FBA-4BD0-8CB8-A6F762B87A41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF2C5AB1-1FBA-4BD0-8CB8-A6F762B87A41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF2C5AB1-1FBA-4BD0-8CB8-A6F762B87A41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
